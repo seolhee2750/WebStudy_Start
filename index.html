@@ -1,79 +1,80 @@
 <!doctype html>
 <html>
-<head>
-<title>seolhee homepage - Welcome</title>
-<meta charset="utf-8">
-  <style>
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    .saw {
-      color: gray;
-    }
-    #active {
-      color: red;
-    }
-    h1 {
-      font-size: 40px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-<h1><a href="index.html">WEB</a></h1>
-<h3 style="text-align: center">김설희</h3>
-<ol>
-  <li><a href="1.html" class="saw">Introduction</a></li>
-  <li><a href="2.html" class="saw" id="active">Career</a></li>
-  <li><a href="3.html">Contact</a></li>
-  <ul>
-    <li>보기 1</li>
-    <li>보기 2</li>
-    <li>보기 3</li>
-  </ul>
-</ol>
-<h2>Introduction</h2>
-<p>
-  안녕하세요.<br>
-  '김설희'의 소개 홈페이지입니다.
-</p>
-<img src="coding.jpg" width="500">
-<p>
-  <div id="disqus_thread"></div>
-  <script>
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://seolhee-web.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
-<p>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5f0ff0405b59f94722bad2de/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
-</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>seolhee homepage - Welcome</title>
+    <style>
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+      </style>
+    </head>
+
+    <body>
+      <h1><a href="index.html">WEB</a></h1>
+      <!--태그 ol은 자동으로 앞에 번호가 붙여져서 리스트처럼 정렬-->
+      <!--태그 ul는 앞에 동그란 삽입이 들어가면서 리스트처럼 정렬-->
+      <ol>
+        <!--html 코드 사이에 css 코드를 넣어줄 때는
+        태그 안에 style= 으로 넣어주든지, class나 id를 이용하여 넣어줌 -->
+        <li><a href="1.html" class="saw">Introduction</a></li>
+        <li><a href="2.html" class="saw" id="active">Career</a></li>
+        <li><a href="3.html">Contact</a></li>
+        <!--href는 다른 스크립트를 엮어주기 위한 태그-->
+        <ul>
+          <li>instagram</li>
+          <li>facebook</li>
+          <li>email</li>
+        </ul>
+      </ol>
+      <h2>Introduction</h2>
+      <p>
+        안녕하세요.<br>
+        '김설희'의 소개 홈페이지입니다.
+      </p>
+      <img src="coding.jpg" width="500">
+      <!--댓글 기능을 위해 disdus에서 따온 코드-->
+      <p>
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://seolhee-web.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </p>
+      <!--관리자와 사용자 간의 실시간 채팅 기능을 위해 tawk에서 띠온 코드-->
+      <p>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/5f0ff0405b59f94722bad2de/default';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+      </p>
+    </body>
 </html>

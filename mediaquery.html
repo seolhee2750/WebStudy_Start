@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div {
+        border: 5px solid green;
+        font-size: 60px;
+      }
+      /* if문과 같은 역할을 하는 것이 바로 media 쿼리 */
+      /* 최소 넓이가 800px일 때 (넓이가 800px 이상일 때) */
+      /* max-width라고 하면, 800px 이하일 때를 말함 */
+      @media (min-width: 800px) {
+        div {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      Responsive
+    </div>
+  </body>
+<html>
