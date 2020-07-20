@@ -3,41 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>seolhee homepage - Welcome</title>
-    <style>
-      a {
-        color: black;
-        text-decoration: none;
-      }
-      h1 {
-        font-size: 40px;
-        text-align: center;
-      }
-      </style>
+    <!--style.css 코드를 불러오는 html 코드-->
+    <link rel="stylesheet" href="style.css">
+    <!--위처럼 불러오지 않았다면,
+    <style></style>을 이용해서 css를 사용할 수 있음-->
     </head>
 
     <body>
       <h1><a href="index.html">WEB</a></h1>
       <!--태그 ol은 자동으로 앞에 번호가 붙여져서 리스트처럼 정렬-->
       <!--태그 ul는 앞에 동그란 삽입이 들어가면서 리스트처럼 정렬-->
-      <ol>
-        <!--html 코드 사이에 css 코드를 넣어줄 때는
-        태그 안에 style= 으로 넣어주든지, class나 id를 이용하여 넣어줌 -->
-        <li><a href="1.html" class="saw">Introduction</a></li>
-        <li><a href="2.html" class="saw" id="active">Career</a></li>
-        <li><a href="3.html">Contact</a></li>
-        <!--href는 다른 스크립트를 엮어주기 위한 태그-->
-        <ul>
-          <li>instagram</li>
-          <li>facebook</li>
-          <li>email</li>
-        </ul>
-      </ol>
-      <h2>Introduction</h2>
-      <p>
-        안녕하세요.<br>
-        '김설희'의 소개 홈페이지입니다.
-      </p>
-      <img src="coding.jpg" width="500">
+
+      <div id="grid">
+        <!--그리드의 첫 번째 요소-->
+        <ol>
+          <!--html 코드 사이에 css 코드를 넣어줄 때는
+          태그 안에 style= 으로 넣어주든지, class나 id를 이용하여 넣어줌 -->
+          <li><a href="1.html" class="saw">Introduction</a></li>
+          <li><a href="2.html" class="saw" id="active">Career</a></li>
+          <li><a href="3.html">Contact</a></li>
+          <!--href는 다른 스크립트를 엮어주기 위한 태그-->
+          <ul>
+            <li>instagram</li>
+            <li>facebook</li>
+            <li>email</li>
+          </ul>
+        </ol>
+        <!--그리드의 두 번째 요소-->
+        <div id="contents">
+
+        <h2>Introduction</h2>
+        <p>
+          안녕하세요.<br>
+          '김설희'의 소개 홈페이지입니다.
+        </p>
+        <img src="coding.jpg" width="500">
+      </div>
+    </div>
       <!--댓글 기능을 위해 disdus에서 따온 코드-->
       <p>
         <div id="disqus_thread"></div>
