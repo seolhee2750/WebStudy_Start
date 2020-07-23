@@ -7,15 +7,25 @@
   </head>
 
   <body>
+    <!--document.querySelector('#night_day')를 this라고 써서, 혹시 같은 내용의
+  태그를 또 한번 작성했을 때 어떤 태그인지 헷갈리지 않게 할 수 있다.-->
     <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('a').style.color = 'white';
-    document.querySelector('body').style.color = 'white';
-    ">
-    <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('a').style.color = 'black';
-    document.querySelector('body').style.color = 'black';
+    var target_body = document.querySelector('body');
+    var target_a = document.querySelector('a');
+
+    if (this.value === 'night') {
+      target_body.style.backgroundColor = 'black';
+      target_a.style.color = 'white';
+      target_body.style.color = 'white';
+      this.value = 'day';
+    }
+
+    else {
+      target_body.style.backgroundColor = 'white';
+      target_a.style.color = 'black';
+      target_body.style.color = 'black';
+      this.value = 'night';
+    }
     ">
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
